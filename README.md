@@ -24,12 +24,12 @@ insights written by an LLM that's grounded in your actual computed stats. This d
 
 
 **Core features**
-- **Data engineering**: OAuth2 ingestion from the Oura API, CSV storage, a
+- **Data engineering** OAuth2 ingestion from the Oura API, CSV storage, a
   shared cleaning/merge pipeline
-- **Analytics**: trend detection (linear regression), correlation analysis
+- **Analytics** trend detection (linear regression), correlation analysis
   across every sleep/readiness/activity/heart-rate metric
-- **Visualization**: six Plotly-powered dashboard pages in Streamlit
-- **AI insights**: short narrative callouts generated per-chart from your
+- **Visualization** six Plotly-powered dashboard pages in Streamlit
+- **AI insights** short narrative callouts generated per-chart from your
   computed stats (OpenAI API), with a rule-based fallback when no API key
   is configured
 
