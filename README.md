@@ -78,8 +78,13 @@ pip install -r requirements.txt
 streamlit run dashboard/Executive_Overview.py
 ```
 
-That's it — the dashboard opens at `http://localhost:8501` using the
-synthetic sample data already in `data/`.
+That's it — Streamlit opens a browser tab pointed at your own machine
+(typically `http://localhost:8501`, though it'll pick a different port if
+that one's already busy — check your terminal for the exact URL). This is
+*not* a hosted demo link: it only works while `streamlit run` is active on
+your computer, and it shows whatever data is in *your* local `data/`
+folder — the synthetic sample data from this repo, unless you've swapped
+in your own Oura export (see below).
 
 **Optional: AI-generated insights.** Add an OpenAI key to enable the ✨
 insight callouts above each chart:
