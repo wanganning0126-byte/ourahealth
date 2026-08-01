@@ -1,6 +1,6 @@
 # Beyond the Oura
 
-A wearable health analytics platform built on top of the Oura Ring API — a
+A wearable health analytics platform built on top of the Oura Ring API, a
 reusable data pipeline, statistical analysis, and an interactive Streamlit
 dashboard with AI-generated insights.
 
