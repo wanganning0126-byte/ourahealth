@@ -12,12 +12,16 @@ export any time (see [Using your own Oura data](#using-your-own-oura-data)).
 
 ## What this is
 
+This project began as a personal tool for understanding my own health data. I wanted a more comprehensive view of the information captured by my Oura Ring, especially the relationships between metrics that are often presented separately in the Oura app.
+
+The version in this repository is a public sample that demonstrates the dashboard’s structure, features, and analytical approach without including my private health data. I am continuing to refine and expand my personal version as I explore new metrics, visualizations, and ways to identify meaningful patterns and irregular trends over time.
+
 Individually wearable apps show you *your* numbers. This project is the
 layer on top: it pulls raw Oura data through a repeatable pipeline, cleans
 and integrates it into one daily table, runs statistical analysis over it,
-and surfaces the result as a six-page dashboard — including natural-language
-insights written by an LLM that's grounded in your actual computed stats,
-not templated boilerplate.
+and surfaces the result as a six-page dashboard, including natural-language
+insights written by an LLM that's grounded in your actual computed stats. This dashboard explores relationships between Oura metrics that are typically presented separately in the app, helping users uncover meaningful patterns and identify unusual trends over time.
+
 
 **Core features**
 - **Data engineering** — OAuth2 ingestion from the Oura API, CSV storage, a
@@ -78,7 +82,7 @@ pip install -r requirements.txt
 streamlit run dashboard/Executive_Overview.py
 ```
 
-That's it — the dashboard opens at `http://localhost:8501` using the
+That's it. The dashboard opens at `http://localhost:8501` using the
 synthetic sample data already in `data/`.
 
 **Optional: AI-generated insights.** Add an OpenAI key to enable the ✨
