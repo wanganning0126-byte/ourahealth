@@ -1,6 +1,6 @@
 # Beyond the Oura
 
-A wearable health analytics platform built on top of the Oura Ring API — a
+A wearable health analytics platform built on top of the Oura Ring API, a
 reusable data pipeline, statistical analysis, and an interactive Streamlit
 dashboard with AI-generated insights.
 
@@ -12,20 +12,24 @@ export any time (see [Using your own Oura data](#using-your-own-oura-data)).
 
 ## What this is
 
+This project began as a personal tool for understanding my own health data. I wanted a more comprehensive view of the information captured by my Oura Ring, especially the relationships between metrics that are often presented separately in the Oura app.
+
+The version in this repository is a public sample that demonstrates the dashboard’s structure, features, and analytical approach without including my private health data. I am continuing to refine and expand my personal version as I explore new metrics, visualizations, and ways to identify meaningful patterns and irregular trends over time.
+
 Individually wearable apps show you *your* numbers. This project is the
 layer on top: it pulls raw Oura data through a repeatable pipeline, cleans
 and integrates it into one daily table, runs statistical analysis over it,
-and surfaces the result as a six-page dashboard — including natural-language
-insights written by an LLM that's grounded in your actual computed stats,
-not templated boilerplate.
+and surfaces the result as a six-page dashboard, including natural-language
+insights written by an LLM that's grounded in your actual computed stats. This dashboard explores relationships between Oura metrics that are typically presented separately in the app, helping users uncover meaningful patterns and identify unusual trends over time.
+
 
 **Core features**
-- **Data engineering** — OAuth2 ingestion from the Oura API, CSV storage, a
+- **Data engineering** - OAuth2 ingestion from the Oura API, CSV storage, a
   shared cleaning/merge pipeline
-- **Analytics** — trend detection (linear regression), correlation analysis
+- **Analytics** - trend detection (linear regression), correlation analysis
   across every sleep/readiness/activity/heart-rate metric
-- **Visualization** — six Plotly-powered dashboard pages in Streamlit
-- **AI insights** — short narrative callouts generated per-chart from your
+- **Visualization** - six Plotly-powered dashboard pages in Streamlit
+- **AI insights** - short narrative callouts generated per-chart from your
   computed stats (OpenAI API), with a rule-based fallback when no API key
   is configured
 
@@ -92,7 +96,7 @@ insight callouts above each chart:
 cp .env.example .env
 # then edit .env and set OPENAI_API_KEY=sk-...
 ```
-Without a key, those callouts simply don't render — nothing else changes.
+Without a key, those callouts simply don't render, nothing else changes.
 
 ## Using your own Oura data
 
